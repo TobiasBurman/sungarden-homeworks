@@ -1,8 +1,6 @@
 import fs from "fs";
 
 //1
-// Let greet = firstName => 'Hello ' + firstName  greet('Student')
-
 const greet = (firstName: string) => {
   return `Hello ${firstName}`;
 };
@@ -11,15 +9,12 @@ greet("Tobias");
 console.log(greet("Tobias"));
 
 //2
-// Let double = n => n * 2
-// Console.log(double(5))
 const double = (n: number) => {
   return n * 2;
 };
 console.log(`The result is: ${double(5)}`);
 
 //3
-// Let isEven = num => num % 2 === 0
 const isEven = (num: number) => {
   return num % 2 === 0;
 };
@@ -93,11 +88,31 @@ const getData = async (url: string) => {
 
 //13
 const process = (data: number[]) => {
-  return data
-    .filter((n) => {
-      return n > 10;
-    })
-    .map((n) => {
-      return n * 2;
+    return data
+      .filter((n) => {
+        return n > 10;
+      })
+      .map((n) => {
+        return n * 2;
+      });
+  };
+
+  //14
+  const timer = (ms: number) => {
+    return new Promise((res) => {
+      return setTimeout(res, ms);
     });
-};
+  };
+  
+  const testTimer = async () => {
+    console.log(`Starting timer...`);
+    await timer(4000);
+    console.log(`Timer finished after 2 seconds!`);
+  };
+  
+  testTimer();
+
+  //15
+  const logErr = (m: string) => {
+    console.error(`Error: ${m}`);
+  };

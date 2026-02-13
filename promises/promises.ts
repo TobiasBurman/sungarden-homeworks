@@ -1,3 +1,4 @@
+export
 const moneyCheck = (balance: number): Promise<string> => {
   return new Promise((resolve, reject) => {
     if (balance > 0) {
