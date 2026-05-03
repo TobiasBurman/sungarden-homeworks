@@ -1,0 +1,21 @@
+{
+  "name": "homeworks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "typescript-exercise.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TobiasBurman/sungarden-homeworks.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/TobiasBurman/sungarden-homeworks/issues"
+  },
+  "homepage": "https://github.com/TobiasBurman/sungarden-homeworks#readme"
+}
